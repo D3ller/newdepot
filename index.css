@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;1,100&display=swap');
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+
+@font-face {
+    font-family: 'Gotham';
+    src: url(./Gotham-Bold.otf);
+}
+
+body {
+    background-color: #121212;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Gotham;
+}
+
+.sbutton a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: border-bottom 0.1s ease-in-out;
+}
+
+li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: border-bottom 0.1s ease-in-out;
+    border-bottom: 0px solid #1ed760;
+
+}
+
+li a:hover {
+    border-bottom: 5px solid #1ed760;
+}
+
+.sbutton a:hover {
+    border-bottom: 5px solid #1ed760;
+}
+
+#home {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Gotham;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.fa-solid {
+    cursor: pointer;
+    transition: transform .75s;
+    transform: rotate(0deg);
+}
+
+.rotate {
+    transform: rotate(180deg)
+}
+
+.tb {
+    float: left;
+    font-size: 30px;
+    margin-left: 50px;
+    background-color: #121212;
+    cursor: pointer;
+    margin-top: 20px;
+    display: initial;
+    visibility: visible;
+    position: relative;
+    z-index: 100;
+}
+
+#nvb {
+    float: right;
+    width: 100%;
+    opacity: 90%;
+    height: 100vh;
+    background-color: #141414;
+    position: fixed;
+    z-index: 5;
+    transition: left 0.5s ease;
+    -webkit-box-shadow: 5px 5px 50px 20px #282828;
+    box-shadow: 5px 5px 50px 20px #282828;
+    transform: translateX(-100vw);
+    transition: transform 0.5s ease-in-out;
+    margin-top: -25px;
+    margin-left: -10px;
+    display: none;
+    visibility: hidden;
+}
+
+.sbutton {
+    background-color: #141414;
+    height: 60px;
+    text-align: center;
+    font-family: "Gotham";
+    font-weight: 500;
+    font-size: 16px;
+    width: 100%;
+    vertical-align: middle;
+    line-height: 60px;
+    display: none;
+}
+
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+
+}
+
+#actives {
+    margin-left: 18.5px;
+    margin-top: 0;
+    position: fixed;
+    background: transparent;
+}
+
+.active {
+    border-bottom: 5px solid #1ed760;
+
+}
+
+#recent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 20px;
+}
+
+.recent {
+    width: 40%;
+    height: 75px;
+    background-color: #292929;
+    border-radius: 7px;
+    min-width: 150px;
+    transition: 0.5s background-color ease-in-out;
+}
+
+.recent-img {
+    width: 75px;
+    height: 75px;
+    border-radius: 7px;
+}
+
+.recent-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 150px;
+}
+
+.recent-text {
+    font-size: 16px;
+    font-family: Gotham;
+    color: white;
+    max-height: 75px;
+    min-width: 25px;
+    margin: 0;
+    word-wrap: break-word;
+
+}
+
+#all {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    padding-right: 40px;
+    color: #909090;
+}
+
+#alls {
+    color: #b1b1b1;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.hiddens {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#allcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.fa-play {
+    color: black;
+
+}
+
+#search {
+    width: 80%;
+    border-radius: 20px;
+    height: 45px;
+    border: none;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    max-width: 500px;
+    padding: 0;
+    text-indent: 50px;
+    font-family: "Gotham";
+    font-weight: 500;
+
+}
+
+#search::placeholder {
+    text-indent: 50px;
+    font-family: "Gotham";
+    font-weight: 500;
+    outline: none;
+}
+
+#search:focus {
+    outline: none;
+}
+
+#searchbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#searchbtn {
+    border-radius: 20px;
+    height: 45px;
+    border: none;
+    width: 10%;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    background-color: #ffffff;
+    min-width: 60px;
+}
+
+.single {
+    width: 90%;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #181818;
+    transition: background-color 0.5s ease-in-out;
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: space-around;
+}
+
+#playlist {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+#playlist-type {
+    font-size: 16px;
+    font-family: Gotham;
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+#playlist-desc {
+    font-family: "Poppins";
+    font-family: 600;
+    color: #b3b3b3;
+}
+
+span {
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+#playlist-title {
+    font-size: 60px;
+    font-family: Gotham;
+    color: white;
+    margin: 0;
+    margin-top: -10px;
+}
+
+#playlist-img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+
+.single:hover {
+    background-color: #020002;
+
+}
+
+.recent:hover {
+    background-color: #43464a;
+}
+
+.single-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 7px;
+}
+
+.single-title {
+    font-size: 16px;
+    font-family: Gotham;
+    color: white;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.single-artist {
+    font-size: 14px;
+    font-family: Gotham;
+    color: rgb(198, 198, 198);
+    font-weight: 400;
+    margin: 0;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#album {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+.old {
+
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.old-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+        width: 190px;
+    height: 250px;
+    background-color: #181818;
+    border-radius: 7px;
+    padding: 20px;
+    transition: background-color 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 1;
+    
+
+}
+
+.old-container:hover {
+    background-color: #282828;
+}
+
+.round {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #181818;
+    transition: background-color 0.5s ease-in-out;
+    padding: 30px;
+    border-radius: 7px;
+}
+
+.round:hover {
+    background-color: #282828;
+}
+
+.round-img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.round-title {
+    font-size: 16px;
+    font-family: Gotham;
+    color: white;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.round-desc {
+    font-size: 14px;
+    font-family: Poppins;
+    color: rgb(198, 198, 198);
+    font-weight: 400;
+    margin: 0;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.card-slider-container {
+    position: relative;
+    max-height: 400px;
+    overflow: hidden;
+  }
+  
+  .card-slider {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .card-slider .round {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    width: 200px;
+  }
+  
+  .card-slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .card-slider-arrow:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .card-slider-arrow-left {
+    left: 10px;
+  }
+  
+  .card-slider-arrow-right {
+    right: 10px;
+  }
+  
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: #131313;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background: #6d6d6d; 
+    opacity: 70%;
+}
+
+.old-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 7px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.old-text {
+    font-size: 16px;
+    font-family: Gotham;
+    color: white;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.old-artist {
+    font-size: 14px;
+    font-family: Poppins;
+    color: rgb(198, 198, 198);
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.play {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #1ed760;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+
+    border: none;
+    position: absolute;
+    font-size: 18px;
+    display: initial;
+    margin-top: 40px;
+    margin-left: 120px;
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.old-container .play {
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.old-container:hover .play {
+    opacity: 1;
+    transform: translateY(0px);
+
+}
+
+#search-icon {
+    font-size: 18px;
+}
+
+@media (max-width: 480px) {
+
+    .spawn {
+        display: none;
+        visibility: hidden;
+    }
+
+    #album {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .tb {
+        display: initial;
+        visibility: visible;
+    }
+
+    #home {
+        padding-top: 50px;
+    }
+    
+    #nvb {
+        display: initial;
+        visibility: visible;
+    }
+}
+
+@media (min-width: 480px) {
+    .tb {
+        display: none;
+        visibility: hidden;
+    }
+
+    .spawn {
+        display: flex;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 680px) {
+    #playlist {
+        flex-direction: column;
+        margin-bottom: 100px;
+    margin-top: 100px;
+    align-items: center;
+    }
+
+    #playlist-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
